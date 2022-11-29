@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/join.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        />
+    </head>
+    <title>Arsenal</title>
+    <link
+        rel="icon"
+        type="image/x-icon"
+        href="https://icons.iconarchive.com/icons/giannis-zographos/british-football-club/128/Arsenal-icon.png"
+    />
+    <body>
+        <header id="nav">
+            <div class="nav--list">
+                <a href="index.html">
+                    <h3 id="logo">
+                        <img src="./images/logo.png" alt="Site logo" />
+                        <span>Arsenal</span>
+                    </h3>
+                </a>
+            </div>
+            <div id="nav__links">
+                <a class="nav__link" href="lobby.html"> Lobby </a>
+                <a class="nav__link" id="create__room__btn" href="join.html">
+                    Create Room
+                </a>
+            </div>
+        </header>
+        <main id="room__lobby__container">
+            <div id="form__container">
+                <div id="form__container__header">
+                    <p>👋 Join Room</p>
+                </div>
+                <form id="lobby__form">
+                    <div class="form__field__wrapper">
+                        <label>Your Name</label>
+                        <input
+                            type="text"
+                            name="name"
+                            required
+                            placeholder="Enter your name..."
+                        />
+                    </div>
+                    <div class="form__field__wrapper" id="room__field">
+                        <label>Room Name</label>
+                        <input
+                            type="text"
+                            name="room"
+                            id="room"
+                            required
+                            placeholder="Enter your room..."
+                            value=""
+                        />
+                    </div>
+                    <div class="form__field__wrapper">
+                        <label>Select Avatar</label>
+                        <div class="form__field__avatar">
+                            <label
+                                class="avatar__selection"
+                                id="avatar__selection"
+                            >
+                                <img
+                                    class="avatar__option"
+                                    src="./images/1.jpg"
+                                    title="Aaron Ramsdale"
+                                />
+                            </label>
+                            <label
+                                class="avatar__selection"
+                                id="avatar__selection"
+                            >
+                                <img
+                                    class="avatar__option"
+                                    src="./images/2.jpg"
+                                    style="margin-right: 30px"
+                                    title="Bejamin White"
+                                />
+                                <img
+                                    class="avatar__option"
+                                    src="./images/5.jpg"
+                                    title="William Saliba"
+                                />
+                                <img
+                                    class="avatar__option"
+                                    src="./images/4.jpg"
+                                    title="Gabriel Magalhaes"
+                                />
+                                <img
+                                    class="avatar__option"
+                                    src="./images/7.png"
+                                    style="margin-left: 30px"
+                                    title="Oleksandr Zinchenko"
+                                />
+                            </label>
+                            <label
+                                class="avatar__selection"
+                                id="avatar__selection"
+                            >
+                                <img
+                                    class="avatar__option"
+                                    src="./images/8.jpg"
+                                    title="Thomas Partey"
+                                />
+                                <img
+                                    class="avatar__option"
+                                    src="./images/13.jpg"
+                                    title="Granit Xhaka"
+                                />
+                            </label>
+                            <label
+                                class="avatar__selection"
+                                id="avatar__selection"
+                            >
+                                <img
+                                    class="avatar__option"
+                                    src="./images/10.jpg"
+                                    title="Martin Ødegaard"
+                                />
+                            </label>
+                            <label
+                                class="avatar__selection"
+                                id="avatar__selection"
+                            >
+                                <img
+                                    class="avatar__option"
+                                    src="./images/9.jpg"
+                                    style="margin-right: 30px"
+                                    title="Bukayo Saka"
+                                />
+                                <img
+                                    class="avatar__option"
+                                    src="./images/14.jpg"
+                                    title="Gabriel Jesus"
+                                />
+                                <img
+                                    class="avatar__option"
+                                    src="./images/15.jpg"
+                                    style="margin-left: 30px"
+                                    title="Gabriel Martinelli"
+                                />
+                            </label>
+                        </div>
+                        <div class="form__field__sub">
+                            <label
+                                class="avatar__selection"
+                                id="avatar__selection"
+                            >
+                                <img
+                                    class="avatar__option"
+                                    src="./images/0.jpg"
+                                    title="Mikel Arteta"
+                                />
+                                <img
+                                    class="avatar__option"
+                                    src="./images/6.jpg"
+                                    title="Takehiro Tomiyasu"
+                                />
+                                <img
+                                    class="avatar__option"
+                                    src="./images/3.jpg"
+                                    title="Kieran Tierney"
+                                />
+                                <img
+                                    class="avatar__option"
+                                    src="./images/11.jpg"
+                                    title="Emile Smith-Rowe"
+                                />
+                                <img
+                                    class="avatar__option"
+                                    src="./images/12.jpg"
+                                    title="Fabio Vieira"
+                                />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__field__wrapper">
+                        <button type="submit">
+                            Join Room
+                            <i
+                                class="fa-sharp fa-solid fa-right-to-bracket"
+                            ></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+    <script src="js/agora-rtm-sdk-1.5.1.js"></script>
+    <script type="module" src="js/join.js"></script>
+</html>
